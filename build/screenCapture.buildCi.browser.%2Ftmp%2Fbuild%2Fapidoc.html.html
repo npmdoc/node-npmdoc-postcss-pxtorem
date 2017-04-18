@@ -1,0 +1,610 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/cuth/postcss-pxtorem#readme">postcss-pxtorem (v4.0.0)</a>
+</h1>
+<h4>A CSS post-processor that converts px to rem.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.postcss-pxtorem">module postcss-pxtorem</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.postcss-pxtorem">
+            function <span class="apidocSignatureSpan"></span>postcss-pxtorem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.process">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.</span>process
+            <span class="apidocSignatureSpan">(root, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.toString">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">postcss-pxtorem.</span>filter_prop_list</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.postcss-pxtorem.filter_prop_list">module postcss-pxtorem.filter_prop_list</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.filter_prop_list.contain">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>contain
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.filter_prop_list.endWith">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>endWith
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.filter_prop_list.exact">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>exact
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.filter_prop_list.notContain">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>notContain
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.filter_prop_list.notEndWith">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>notEndWith
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.filter_prop_list.notExact">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>notExact
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.filter_prop_list.notStartWith">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>notStartWith
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.filter_prop_list.startWith">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>startWith
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.postcss-pxtorem.process">module postcss-pxtorem.process</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.process.process">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.</span>process
+            <span class="apidocSignatureSpan">(root, opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.postcss-pxtorem.toString">module postcss-pxtorem.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.toString.toString">
+            function <span class="apidocSignatureSpan">postcss-pxtorem.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.postcss-pxtorem" id="apidoc.module.postcss-pxtorem">module postcss-pxtorem</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.postcss-pxtorem" id="apidoc.element.postcss-pxtorem.postcss-pxtorem">
+        function <span class="apidocSignatureSpan"></span>postcss-pxtorem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.process" id="apidoc.element.postcss-pxtorem.process">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.</span>process
+        <span class="apidocSignatureSpan">(root, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (root, opts) {
+  return postcss([creator(opts)]).process(root, opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var fs = require('fs');
+var postcss = require('postcss');
+var pxtorem = require('postcss-pxtorem');
+var css = fs.readFileSync('main.css', 'utf8');
+var options = {
+    replace: false
+};
+var processedCss = postcss(pxtorem(options)).<span class="apidocCodeKeywordSpan">process</span>(css).css;
+
+fs.writeFile('main-rem.css', processedCss, function (err) {
+  if (err) {
+    throw err;
+  }
+  console.log('Rem file written.');
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.toString" id="apidoc.element.postcss-pxtorem.toString">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.postcss-pxtorem.filter_prop_list" id="apidoc.module.postcss-pxtorem.filter_prop_list">module postcss-pxtorem.filter_prop_list</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.filter_prop_list.contain" id="apidoc.element.postcss-pxtorem.filter_prop_list.contain">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>contain
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">contain = function (list) {
+    return list.filter(function (m) {
+        return m.match(/^\*.+\*$/);
+    }).map(function (m) {
+        return m.substr(1, m.length - 2);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function createPropListMatcher(propList) {
+var hasWild = propList.indexOf('*') &gt; -1;
+var matchAll = (hasWild &amp;&amp; propList.length === 1);
+var lists = {
+    exact: filterPropList.exact(propList),
+    contain: filterPropList.<span class="apidocCodeKeywordSpan">contain</span>(propList),
+    startWith: filterPropList.startWith(propList),
+    endWith: filterPropList.endWith(propList),
+    notExact: filterPropList.notExact(propList),
+    notContain: filterPropList.notContain(propList),
+    notStartWith: filterPropList.notStartWith(propList),
+    notEndWith: filterPropList.notEndWith(propList)
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.filter_prop_list.endWith" id="apidoc.element.postcss-pxtorem.filter_prop_list.endWith">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>endWith
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">endWith = function (list) {
+    return list.filter(function (m) {
+        return m.match(/^\*[^\*]+$/);
+    }).map(function (m) {
+        return m.substr(1);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function createPropListMatcher(propList) {
+var hasWild = propList.indexOf('*') &gt; -1;
+var matchAll = (hasWild &amp;&amp; propList.length === 1);
+var lists = {
+    exact: filterPropList.exact(propList),
+    contain: filterPropList.contain(propList),
+    startWith: filterPropList.startWith(propList),
+    endWith: filterPropList.<span class="apidocCodeKeywordSpan">endWith</span>(propList),
+    notExact: filterPropList.notExact(propList),
+    notContain: filterPropList.notContain(propList),
+    notStartWith: filterPropList.notStartWith(propList),
+    notEndWith: filterPropList.notEndWith(propList)
+};
+return function (prop) {
+    if (matchAll) return true;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.filter_prop_list.exact" id="apidoc.element.postcss-pxtorem.filter_prop_list.exact">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>exact
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exact = function (list) {
+    return list.filter(function (m) {
+        return m.match(/^[^\*\!]+$/);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+}
+
+function createPropListMatcher(propList) {
+var hasWild = propList.indexOf('*') &gt; -1;
+var matchAll = (hasWild &amp;&amp; propList.length === 1);
+var lists = {
+    exact: filterPropList.<span class="apidocCodeKeywordSpan">exact</span>(propList),
+    contain: filterPropList.contain(propList),
+    startWith: filterPropList.startWith(propList),
+    endWith: filterPropList.endWith(propList),
+    notExact: filterPropList.notExact(propList),
+    notContain: filterPropList.notContain(propList),
+    notStartWith: filterPropList.notStartWith(propList),
+    notEndWith: filterPropList.notEndWith(propList)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.filter_prop_list.notContain" id="apidoc.element.postcss-pxtorem.filter_prop_list.notContain">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>notContain
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notContain = function (list) {
+    return list.filter(function (m) {
+        return m.match(/^\!\*.+\*$/);
+    }).map(function (m) {
+        return m.substr(2, m.length - 3);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var matchAll = (hasWild &amp;&amp; propList.length === 1);
+var lists = {
+    exact: filterPropList.exact(propList),
+    contain: filterPropList.contain(propList),
+    startWith: filterPropList.startWith(propList),
+    endWith: filterPropList.endWith(propList),
+    notExact: filterPropList.notExact(propList),
+    notContain: filterPropList.<span class="apidocCodeKeywordSpan">notContain</span>(propList),
+    notStartWith: filterPropList.notStartWith(propList),
+    notEndWith: filterPropList.notEndWith(propList)
+};
+return function (prop) {
+    if (matchAll) return true;
+    return (
+        (
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.filter_prop_list.notEndWith" id="apidoc.element.postcss-pxtorem.filter_prop_list.notEndWith">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>notEndWith
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notEndWith = function (list) {
+    return list.filter(function (m) {
+        return m.match(/^\!\*[^\*]+$/);
+    }).map(function (m) {
+        return m.substr(2);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    exact: filterPropList.exact(propList),
+    contain: filterPropList.contain(propList),
+    startWith: filterPropList.startWith(propList),
+    endWith: filterPropList.endWith(propList),
+    notExact: filterPropList.notExact(propList),
+    notContain: filterPropList.notContain(propList),
+    notStartWith: filterPropList.notStartWith(propList),
+    notEndWith: filterPropList.<span class="apidocCodeKeywordSpan">notEndWith</span>(propList)
+};
+return function (prop) {
+    if (matchAll) return true;
+    return (
+        (
+            hasWild ||
+            lists.exact.indexOf(prop) &gt; -1 ||
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.filter_prop_list.notExact" id="apidoc.element.postcss-pxtorem.filter_prop_list.notExact">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>notExact
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notExact = function (list) {
+    return list.filter(function (m) {
+        return m.match(/^\![^\*].*$/);
+    }).map(function (m) {
+        return m.substr(1);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var hasWild = propList.indexOf('*') &gt; -1;
+var matchAll = (hasWild &amp;&amp; propList.length === 1);
+var lists = {
+    exact: filterPropList.exact(propList),
+    contain: filterPropList.contain(propList),
+    startWith: filterPropList.startWith(propList),
+    endWith: filterPropList.endWith(propList),
+    notExact: filterPropList.<span class="apidocCodeKeywordSpan">notExact</span>(propList),
+    notContain: filterPropList.notContain(propList),
+    notStartWith: filterPropList.notStartWith(propList),
+    notEndWith: filterPropList.notEndWith(propList)
+};
+return function (prop) {
+    if (matchAll) return true;
+    return (
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.filter_prop_list.notStartWith" id="apidoc.element.postcss-pxtorem.filter_prop_list.notStartWith">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>notStartWith
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notStartWith = function (list) {
+    return list.filter(function (m) {
+        return m.match(/^\![^\*]+\*$/);
+    }).map(function (m) {
+        return m.substr(1, m.length - 2);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var lists = {
+    exact: filterPropList.exact(propList),
+    contain: filterPropList.contain(propList),
+    startWith: filterPropList.startWith(propList),
+    endWith: filterPropList.endWith(propList),
+    notExact: filterPropList.notExact(propList),
+    notContain: filterPropList.notContain(propList),
+    notStartWith: filterPropList.<span class="apidocCodeKeywordSpan">notStartWith</span>(propList),
+    notEndWith: filterPropList.notEndWith(propList)
+};
+return function (prop) {
+    if (matchAll) return true;
+    return (
+        (
+            hasWild ||
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.filter_prop_list.startWith" id="apidoc.element.postcss-pxtorem.filter_prop_list.startWith">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.filter_prop_list.</span>startWith
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">startWith = function (list) {
+    return list.filter(function (m) {
+        return m.match(/^[^\*\!]+\*$/);
+    }).map(function (m) {
+        return m.substr(0, m.length - 1);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function createPropListMatcher(propList) {
+var hasWild = propList.indexOf('*') &gt; -1;
+var matchAll = (hasWild &amp;&amp; propList.length === 1);
+var lists = {
+    exact: filterPropList.exact(propList),
+    contain: filterPropList.contain(propList),
+    startWith: filterPropList.<span class="apidocCodeKeywordSpan">startWith</span>(propList),
+    endWith: filterPropList.endWith(propList),
+    notExact: filterPropList.notExact(propList),
+    notContain: filterPropList.notContain(propList),
+    notStartWith: filterPropList.notStartWith(propList),
+    notEndWith: filterPropList.notEndWith(propList)
+};
+return function (prop) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.postcss-pxtorem.process" id="apidoc.module.postcss-pxtorem.process">module postcss-pxtorem.process</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.process.process" id="apidoc.element.postcss-pxtorem.process.process">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.</span>process
+        <span class="apidocSignatureSpan">(root, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (root, opts) {
+  return postcss([creator(opts)]).process(root, opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var fs = require('fs');
+var postcss = require('postcss');
+var pxtorem = require('postcss-pxtorem');
+var css = fs.readFileSync('main.css', 'utf8');
+var options = {
+    replace: false
+};
+var processedCss = postcss(pxtorem(options)).<span class="apidocCodeKeywordSpan">process</span>(css).css;
+
+fs.writeFile('main-rem.css', processedCss, function (err) {
+  if (err) {
+    throw err;
+  }
+  console.log('Rem file written.');
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.postcss-pxtorem.toString" id="apidoc.module.postcss-pxtorem.toString">module postcss-pxtorem.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-pxtorem.toString.toString" id="apidoc.element.postcss-pxtorem.toString.toString">
+        function <span class="apidocSignatureSpan">postcss-pxtorem.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
