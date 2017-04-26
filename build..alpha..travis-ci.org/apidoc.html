@@ -81,15 +81,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.toString">
-            function <span class="apidocSignatureSpan">postcss-pxtorem.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">postcss-pxtorem.</span>filter_prop_list</span>
 
         </li>
@@ -172,32 +163,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.postcss-pxtorem.process">module postcss-pxtorem.process</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.process.process">
-            function <span class="apidocSignatureSpan">postcss-pxtorem.</span>process
-            <span class="apidocSignatureSpan">(root, opts)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.postcss-pxtorem.toString">module postcss-pxtorem.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.postcss-pxtorem.toString.toString">
-            function <span class="apidocSignatureSpan">postcss-pxtorem.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -249,21 +214,6 @@ fs.writeFile(&#x27;main-rem.css&#x27;, processedCss, function (err) {
   console.log(&#x27;Rem file written.&#x27;);
 });
 ...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.postcss-pxtorem.toString" id="apidoc.element.postcss-pxtorem.toString">
-        function <span class="apidocSignatureSpan">postcss-pxtorem.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -549,60 +499,6 @@ var lists = {
 };
 return function (prop) {
 ...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.postcss-pxtorem.process" id="apidoc.module.postcss-pxtorem.process">module postcss-pxtorem.process</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.postcss-pxtorem.process.process" id="apidoc.element.postcss-pxtorem.process.process">
-        function <span class="apidocSignatureSpan">postcss-pxtorem.</span>process
-        <span class="apidocSignatureSpan">(root, opts)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">process = function (root, opts) {
-  return postcss([creator(opts)]).process(root, opts);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-var fs = require(&#x27;fs&#x27;);
-var postcss = require(&#x27;postcss&#x27;);
-var pxtorem = require(&#x27;postcss-pxtorem&#x27;);
-var css = fs.readFileSync(&#x27;main.css&#x27;, &#x27;utf8&#x27;);
-var options = {
-    replace: false
-};
-var processedCss = postcss(pxtorem(options)).<span class="apidocCodeKeywordSpan">process</span>(css).css;
-
-fs.writeFile(&#x27;main-rem.css&#x27;, processedCss, function (err) {
-  if (err) {
-    throw err;
-  }
-  console.log(&#x27;Rem file written.&#x27;);
-});
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.postcss-pxtorem.toString" id="apidoc.module.postcss-pxtorem.toString">module postcss-pxtorem.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.postcss-pxtorem.toString.toString" id="apidoc.element.postcss-pxtorem.toString.toString">
-        function <span class="apidocSignatureSpan">postcss-pxtorem.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
