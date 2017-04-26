@@ -1,6 +1,6 @@
 # npmdoc-postcss-pxtorem
 
-#### api documentation for  [postcss-pxtorem (v4.0.0)](https://github.com/cuth/postcss-pxtorem#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-postcss-pxtorem.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-postcss-pxtorem) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-postcss-pxtorem.svg)](https://travis-ci.org/npmdoc/node-npmdoc-postcss-pxtorem)
+#### basic api documentation for  [postcss-pxtorem (v4.0.0)](https://github.com/cuth/postcss-pxtorem#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-postcss-pxtorem.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-postcss-pxtorem) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-postcss-pxtorem.svg)](https://travis-ci.org/npmdoc/node-npmdoc-postcss-pxtorem)
 
 #### A CSS post-processor that converts px to rem.
 
@@ -66,7 +66,8 @@
     "scripts": {
         "test": "jasmine-node spec"
     },
-    "version": "4.0.0"
+    "version": "4.0.0",
+    "bin": {}
 }
 ```
 
